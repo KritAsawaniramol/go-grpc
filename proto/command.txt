@@ -1,0 +1,12 @@
+protoc calculator.proto --go_out=../server
+protoc calculator.proto --go_out=../server --go-grpc_out=../server
+
+% ls -lh
+total 16
+-rw-r--r--@ 1 kritasawaniramol  staff   243B Sep 26 00:34 calculator.proto
+-rw-r--r--@ 1 kritasawaniramol  staff   109B Sep 26 00:46 gen.sh
+ % chmod +x gen.sh
+ % ls -lh         
+total 16
+-rw-r--r--@ 1 kritasawaniramol  staff   243B Sep 26 00:34 calculator.proto
+-rwxr-xr-x@ 1 kritasawaniramol  staff   109B Sep 26 00:46 gen.sh
